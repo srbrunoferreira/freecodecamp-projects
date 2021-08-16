@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #040111;
+  padding: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#root {
+  background: linear-gradient(360deg, rgba(6, 2, 25, 1) 50%, rgba(109, 106, 117, 1) 50%);
+  min-height: 100vh;
+  padding: 25px;
+}
+
+#wrapper {
+  max-width: 370px;
+  background-color: #fff;
+  padding: 25px 15px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#title {
+  font-size: 2.1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #3110c6;
+  text-align: center;
+}
+
+#description {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #b6b4bb;
+}
+
+#survey-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.field-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.field-container-title {
+  margin-bottom: 8px;
+}
+
+.field-container input,
+.field-container textarea,
+.field-container select {
+  border-radius: 3px;
+  border: 1px solid #edecee;
+  padding: 12px;
+  font-size: 0.9em;
+  color: #040111;
+}
+
+.field-container input::placeholder,
+.field-container textarea::placeholder {
+  font-size: 0.8em;
+}
+
+.field-container textarea {
+  max-height: 150px;
+  min-height: 150px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.main-activity-field-container label,
+.newsletter-field-container label {
+  margin-bottom: 6px;
+  font-size: 0.95em;
+}
+
+.form-btn {
+  width: 100px;
+  height: 38px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.form-btn:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.form-btn:active {
+  box-shadow: none;
+}
+
+#submit {
+  border: none;
+  background-color: #3110c6;
+  color: #fff;
+}
+
+#reset-btn {
+  border: 1px solid #3110c6;
+  background-color: #fff;
+  color: #040111;
+  margin-left: 16px;
+}
+
+#btns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}

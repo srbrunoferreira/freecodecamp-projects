@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title>FCC: Technical Documentation Page</title>
+</head>
+
+<body>
+  <div id="root">
+
+    <div id="menu-container">
+      <nav id="navbar">
+        <header>
+          <h1>PHP Documentation</h1>
+        </header>
+        <ul>
+          <li>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Hello_world">Hello world</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Data_types">Data types</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Variables">Variables</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>
+          Introduction
+        </header>
+        <div class="section-content">
+          <p>
+            PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose
+            scripting language that is especially suited for web development and can be embedded into HTML.
+          </p>
+          <p>
+            Nice, but what does that mean? An example:
+          </p>
+          <code>
+            &lt;?php<br>&nbsp;&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #DD0000">"Hi,&nbsp;I'm&nbsp;a&nbsp;PHP&nbsp;script!"</span>
+          </code>
+          <p>Example in a HTML file</p>
+          <code><span>
+            &lt;!DOCTYPE&nbsp;html&gt;<br>&lt;html&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Example&lt;/title&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #DD0000">"Hi,&nbsp;I'm&nbsp;a&nbsp;PHP&nbsp;script!"</span><span style="color: #007700">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">?&gt;<br></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>&lt;/html&gt;</span>
+            </code>
+        </div>
+      </section>
+      <section id="What_you_should_already_know" class="main-section">
+        <header>
+          What you should already know
+        </header>
+        <div id="what_you_should_already_know" class="section-content">
+          <p>
+            In this tutorial we assume that your server has activated support for PHP and that all files ending in .php
+            are handled by PHP. On most servers, this is the default extension for PHP files, but ask your server
+            administrator to be sure. If your server supports PHP, then you do not need to do anything. Just create your
+            .php files, put them in your web directory and the server will automatically parse them for you. There is no
+            need to compile anything nor do you need to install any extra tools. Think of these PHP-enabled files as
+            simple HTML files with a whole new family of magical tags that let you do all sorts of things.
+          </p>
+        </div>
+      </section>
+      <section id="Hello_world" class="main-section">
+        <header>
+          Hello world
+        </header>
+        <div class="section-content">
+          <p>
+            Create a file named hello.php and put it in your web server's root directory (DOCUMENT_ROOT) with the
+            following content:
+          </p>
+          <code><span>
+            &lt;html&gt;<br>&nbsp;&lt;head&gt;<br>&nbsp;&nbsp;&lt;title&gt;PHP&nbsp;Test&lt;/title&gt;<br>&nbsp;&lt;/head&gt;<br>&nbsp;&lt;body&gt;<br>&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #DD0000">'&lt;p&gt;Hello&nbsp;World&lt;/p&gt;'</span><span style="color: #007700">;&nbsp;</span><span style="color: #0000BB">?&gt;</span>&nbsp;<br>&nbsp;&lt;/body&gt;<br>&lt;/html&gt;</span>
+            </code>
+        </div>
+      </section>
+      <section id="Data_types" class="main-section">
+        <header>
+          Data types
+        </header>
+        <div class="section-content">
+          <p>Four scalar types:</p>
+          <ul>
+            <li>bool</li>
+            <li>int</li>
+            <li>float (floating-point number, aka double)</li>
+            <li>string</li>
+          </ul>
+          <p>Four compound types:</p>
+          <ul>
+            <li>array</li>
+            <li>object</li>
+            <li>callable</li>
+            <li>iterable</li>
+          </ul>
+          <p>And finally two special types:</p>
+
+          <ul>
+            <li>resource</li>
+            <li>NULL</li>
+          </ul>
+          <p>Exemple of usage</p>
+          <code><span>
+            <span style="color: #0000BB">&lt;?php<br>$a_bool&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">TRUE</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;a&nbsp;boolean<br></span><span style="color: #0000BB">$a_str&nbsp;&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"foo"</span><span style="color: #007700">;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;a&nbsp;string<br></span><span style="color: #0000BB">$a_str2&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'foo'</span><span style="color: #007700">;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;a&nbsp;string<br></span><span style="color: #0000BB">$an_int&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">12</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;an&nbsp;integer<br><br></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">gettype</span><span style="color: #007700">(</span><span style="color: #0000BB">$a_bool</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//&nbsp;prints&nbsp;out:&nbsp;&nbsp;boolean<br></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">gettype</span><span style="color: #007700">(</span><span style="color: #0000BB">$a_str</span><span style="color: #007700">);&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;prints&nbsp;out:&nbsp;&nbsp;string<br><br>//&nbsp;If&nbsp;this&nbsp;is&nbsp;an&nbsp;integer,&nbsp;increment&nbsp;it&nbsp;by&nbsp;four<br></span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">is_int</span><span style="color: #007700">(</span><span style="color: #0000BB">$an_int</span><span style="color: #007700">))&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$an_int&nbsp;</span><span style="color: #007700">+=&nbsp;</span><span style="color: #0000BB">4</span><span style="color: #007700">;<br>}<br><br></span><span style="color: #FF8000">//&nbsp;If&nbsp;$a_bool&nbsp;is&nbsp;a&nbsp;string,&nbsp;print&nbsp;it&nbsp;out<br>//&nbsp;(does&nbsp;not&nbsp;print&nbsp;out&nbsp;anything)<br></span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$a_bool</span><span style="color: #007700">))&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #DD0000">"String:&nbsp;</span><span style="color: #0000BB">$a_bool</span><span style="color: #DD0000">"</span><span style="color: #007700">;<br>}<br></span><span style="color: #0000BB">?&gt;</span>
+            </span>
+          </code>
+        </div>
+      </section>
+      <section id="Variables" class="main-section">
+        <header>
+          Variables
+        </header>
+        <div class="section-content">
+          <p>
+            Variables in PHP are represented by a dollar sign followed by the name of the variable. The variable name is case-sensitive.
+          </p>
+          <p>
+            Variable names follow the same rules as other labels in PHP. A valid variable name starts with a letter or underscore, followed by any number of letters, numbers, or underscores. As a regular expression, it would be expressed thus: ^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$
+          </p>
+          <code><span style="color: #000000">
+            <span style="color: #0000BB">&lt;?php<br>$var&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'Bob'</span><span style="color: #007700">;<br></span><span style="color: #0000BB">$Var&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'Joe'</span><span style="color: #007700">;<br>echo&nbsp;</span><span style="color: #DD0000">"</span><span style="color: #0000BB">$var</span><span style="color: #DD0000">,&nbsp;</span><span style="color: #0000BB">$Var</span><span style="color: #DD0000">"</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;outputs&nbsp;"Bob,&nbsp;Joe"<br><br></span><span style="color: #007700">$</span><span style="color: #0000BB">4site&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'not&nbsp;yet'</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;invalid;&nbsp;starts&nbsp;with&nbsp;a&nbsp;number<br></span><span style="color: #0000BB">$_4site&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'not&nbsp;yet'</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;valid;&nbsp;starts&nbsp;with&nbsp;an&nbsp;underscore<br></span><span style="color: #0000BB">$täyte&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'mansikka'</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;valid;&nbsp;'ä'&nbsp;is&nbsp;(Extended)&nbsp;ASCII&nbsp;228.<br></span><span style="color: #0000BB">?&gt;</span>
+            </span>
+          </code>
+        </div>
+      </section>
+    </main>
+
+    <footer id="mfooter">
+      <div id="credits">
+        <p>
+          Texts taken from the official PHP documentation at
+          <a href="https://www.php.net/manual/en/" target="_blank">php.net</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

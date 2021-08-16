@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 400;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+#root {}
+
+#wrapper {}
+
+#menu-container {
+  position: fixed;
+  min-width: 300px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-right: 10px solid #6D6A75;
+}
+
+#navbar {}
+
+#navbar header h1 {
+  font-size: 1.4em;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #6D6A75;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 15px;
+}
+
+.nav-link {
+  display: block;
+  width: 100%;
+  color: #13064A;
+  padding: 15px 0;
+  text-decoration: none;
+  border-bottom: 1px solid #6D6A75;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.02);
+}
+
+#main-doc {
+  max-width: 700px;
+  margin: 0 auto 0;
+  margin-left: 300px;
+  padding: 5px 20px;
+}
+
+.main-section {
+  margin-bottom: 45px;
+}
+
+.main-section:last-child {
+  margin-bottom: unset;
+}
+
+.main-section header h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.main-section header h2 a {
+  font-size: 0.92em;
+  margin: 10px 0;
+  margin-right: 10px;
+  color: #3110C6;
+  text-decoration: none;
+}
+
+.section-content p,
+.section-content ul li {
+  font-size: 0.9em;
+  line-height: 1.8em;
+  color: #29282C;
+}
+
+.section-content ul {
+  margin-left: 45px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.section-content code {
+  display: block;
+  margin: 10px 0;
+  font-size: 0.85em !important;
+  background-color: #EFEFEF;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  width: 80%;
+  font-family: monospace !important;
+  border-radius: 3px;
+}
+
+#mfooter {
+  text-align: center;
+  margin-left: 300px;
+  padding: 30px;
+  background-color: #E3DDFC;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  #menu-container {
+    bottom: unset;
+    right: 0;
+    max-height: 200px;
+    overflow: auto;
+    background-color: #fff;
+    border-right: unset;
+    border-bottom: 5px solid #6D6A75;
+  }
+
+  #main-doc {
+    margin-left: unset;
+    margin-top: 230px;
+  }
+  #mfooter {
+    margin-left: unset;
+  }
+}

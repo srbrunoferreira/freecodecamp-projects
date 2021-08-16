@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title>FCC: Survey Form</title>
+</head>
+
+<body>
+  <div id="root">
+    <div id="wrapper">
+      <header>
+        <h1 id="title">Join our company</h1>
+        <p id="description">Join to the biggest company of programming and software development!</p>
+      </header>
+
+      <form id="survey-form" action="#">
+
+        <div class="field-container">
+          <label class="field-container-title" id="name-label" for="name">Name</label>
+          <input id="name" type="text" placeholder="Type your name here" required>
+        </div>
+
+        <div class="field-container">
+          <label class="field-container-title" id="email-label" for="email">Email</label>
+          <input id="email" type="email" placeholder="Type your email here" required>
+        </div>
+
+        <div class="field-container">
+          <label class="field-container-title" id="number-label" for="number">Age</label>
+          <input id="number" type="number" min="10" max="100" placeholder="Please, type your age" required>
+        </div>
+
+        <div class="field-container">
+          <label class="field-container-title" for="dropdown">Which is your main stack?</label>
+          <select id="dropdown" name="main-stack" required>
+            <option value="">Select a option</option>
+            <option value="php">PHP</option>
+            <option value="java">Java</option>
+            <option value="node">VueJs</option>
+            <option value="react">ReactJs</option>
+          </select>
+        </div>
+
+        <div class="field-container main-activity-field-container">
+          <p class="field-container-title">Which is your main activity?</p>
+          <label>
+            <input name="career" value="back-end" type="checkbox">
+            Back End development
+          </label>
+          <label>
+            <input name="career" value="front-end" type="checkbox">
+            Front End development
+          </label>
+          <label>
+            <input name="career" value="fullstack" type="checkbox">
+            Full Stack development
+          </label>
+          <label>
+            <input name="career" value="ux-ui" type="checkbox">
+            UX / UI
+          </label>
+          <label>
+            <input name="career" value="devops" type="checkbox">
+            DevOps
+          </label>
+          <label>
+            <input name="career" value="big-data" type="checkbox">
+            Big data
+          </label>
+        </div>
+
+        <div class="field-container newsletter-field-container">
+          <p class="field-container-title">Would you like to subscribe to our newsletter?</p>
+          <label>
+            <input name="user-recommend" value="yes" type="radio">
+            Yes
+          </label>
+          <label>
+            <input name="user-recommend" value="no" type="radio">
+            No
+          </label>
+        </div>
+
+        <div class="field-container">
+          <label class="field-container-title" for="comments">Comments</label>
+          <textarea name="comments" id="comments" placeholder="Type additional comments"></textarea>
+        </div>
+
+        <div id="btns-container">
+          <button id="submit" class="form-btn" type="submit">Submit</button>
+          <button id="reset-btn" class="form-btn" type="reset">Clear</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
